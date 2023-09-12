@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:letter_count_app/authentication_page.dart';
+import 'package:letter_count_app/characterCount.dart';
 
 void main() {
   runApp(MyApp());
@@ -20,6 +21,18 @@ class MyApp extends StatelessWidget {
         ),
         body: AuthScreen(),
       ),
+    );
+  }
+}
+
+class SecondScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('count screen'),
+      ),
+      body: CharacterCountWidget(),
     );
   }
 }
